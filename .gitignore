@@ -1,0 +1,11 @@
+# Eclipse
+.project
+.classpath
+.settings/
+
+# File build
+build/
+.class
+
+# Tomcat
+/target/
