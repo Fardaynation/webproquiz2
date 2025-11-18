@@ -1,11 +1,9 @@
 package com.proyekquiz.model;
 
 public class Frs {
-
     private int id;
     private int mahasiswaId;
     private int matakuliahId;
-    
     public Frs() {
     }
 

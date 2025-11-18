@@ -1,13 +1,10 @@
 package com.proyekquiz.model;
 
 public class MataKuliah {
-
     private int id;
     private String kodeMk;
     private String namaMk;
     private int sks;
-
-    // Constructor kosong
     public MataKuliah() {
     }
 

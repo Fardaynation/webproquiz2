@@ -10,11 +10,9 @@
 <body>
     <div class="container">
         <h2>Manajemen Data Mata Kuliah</h2>
-        
         <div class="add-link">
             <a href="MataKuliahServlet?action=tambah" class="btn btn-primary">Tambah Mata Kuliah Baru</a>
         </div>
-
         <table>
             <thead>
                 <tr>

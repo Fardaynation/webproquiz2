@@ -125,13 +125,13 @@ a:hover {
 }
 .btn-danger {
     color: #fff;
-    background-color: #dc3545; /* Warna merah "warning" /
+    background-color: #dc3545;
     border-color: #dc3545;
 }
 
 .btn-danger:hover {
     color: #fff;
-    background-color: #c82333; / Merah lebih gelap saat hover */
+    background-color: #c82333;
     border-color: #bd2130;
     text-decoration: none;
 }

@@ -1,15 +1,11 @@
 package com.proyekquiz.model;
 
-// Ini adalah DTO (Data Transfer Object)
 public class FrsDetail {
-
     private int frsId;
     private String kodeMk;
     private String namaMk;
     private int sks;
-    
     public FrsDetail() {}
-    
     public int getFrsId() {
         return frsId;
     }
