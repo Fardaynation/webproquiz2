@@ -10,7 +10,6 @@
 <body>
     <div class="container">
         <h2>Manajemen Data Mahasiswa</h2>
-        
         <div class="add-link">
             <a href="MahasiswaServlet?action=tambah" class="btn btn-primary">Tambah Mahasiswa Baru</a>
         </div>
@@ -36,8 +35,7 @@
                                class="btn btn-primary">Edit</a>
                             <a href="MahasiswaServlet?action=hapus&id=${mhs.id}" 
                                class="btn btn-danger"
-                               onclick="return confirm('Yakin ingin menghapus data ini?')">Hapus</a>
-                            
+                               onclick="return confirm('Yakin ingin menghapus data ini?')">Hapus</a>      
                             <a href="FrsServlet?action=tampil&mahasiswa_id=${mhs.id}" 
                                class="btn btn-success">FRS</a>
                         </td>

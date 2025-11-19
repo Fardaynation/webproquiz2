@@ -7,39 +7,38 @@ public class MataKuliah {
     private String namaMk;
     private int sks;
 
-    // Constructor kosong
-    public MataKuliah() {
+    public MataKuliah(){
     }
 
-    public int getId() {
+    public int getId(){
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(int id){
         this.id = id;
     }
 
-    public String getKodeMk() {
+    public String getKodeMk(){
         return kodeMk;
     }
 
-    public void setKodeMk(String kodeMk) {
+    public void setKodeMk(String kodeMk){
         this.kodeMk = kodeMk;
     }
 
-    public String getNamaMk() {
+    public String getNamaMk(){
         return namaMk;
     }
 
-    public void setNamaMk(String namaMk) {
+    public void setNamaMk(String namaMk){
         this.namaMk = namaMk;
     }
 
-    public int getSks() {
+    public int getSks(){
         return sks;
     }
 
-    public void setSks(int sks) {
+    public void setSks(int sks){
         this.sks = sks;
     }
 }

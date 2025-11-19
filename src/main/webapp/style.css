@@ -1,5 +1,5 @@
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
     background-color: #f4f7f6;
     color: #333;
     line-height: 1.6;
@@ -125,16 +125,17 @@ a:hover {
 }
 .btn-danger {
     color: #fff;
-    background-color: #dc3545; /* Warna merah "warning" /
+    background-color: #dc3545;
     border-color: #dc3545;
 }
 
 .btn-danger:hover {
     color: #fff;
-    background-color: #c82333; / Merah lebih gelap saat hover */
+    background-color: #c82333;
     border-color: #bd2130;
     text-decoration: none;
 }
+
 .btn-success {
     color: #fff;
     background-color: #28a745;

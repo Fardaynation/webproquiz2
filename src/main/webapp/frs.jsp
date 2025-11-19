@@ -9,45 +9,31 @@
 </head>
 <body>
     <div class="container">
-
-        <%-- Tampilkan nama mahasiswa yang FRS-nya sedang kita lihat --%>
         <h2>FRS untuk: <c:out value="${mahasiswa.nama}" /></h2>
         <p>NIM: <c:out value="${mahasiswa.nim}" /></p>
 
         <hr>
-
-        <%-- Bagian 1: Form untuk MENAMBAH mata kuliah --%>
         <h3>Tambahkan Mata Kuliah</h3>
         <form action="FrsServlet" method="post">
             <input type="hidden" name="action" value="tambah">
-            <%-- Kita harus mengirim mahasiswa_id agar tahu FRS ini milik siapa --%>
             <input type="hidden" name="mahasiswa_id" value="${mahasiswa.id}">
             
             <div class="form-group">
                 <label for="matakuliah_id">Mata Kuliah (yang belum diambil):</label>
                 <select name="matakuliah_id" id="matakuliah_id" class="form-control">
-                    
-                    <%-- 
-                      Loop ini mengisi dropdown dengan data 'mkBelumDiambil'
-                      yang dikirim oleh FrsServlet
-                    --%>
                     <c:forEach var="mk" items="${mkBelumDiambil}">
                         <option value="${mk.id}">
                             <c:out value="${mk.kodeMk}" /> - <c:out value="${mk.namaMk}" />
                         </option>
-                    </c:forEach>
-                    
+                    </c:forEach>           
                 </select>
-            </div>
-            
+            </div>   
             <div class="form-actions">
                 <button type="submit" class="btn btn-primary">Tambahkan ke FRS</button>
             </div>
         </form>
-
         <hr>
 
-        <%-- Bagian 2: Tabel mata kuliah yang SUDAH diambil --%>
         <h3>Mata Kuliah yang Sudah Diambil</h3>
         <table>
             <thead>
@@ -59,22 +45,12 @@
                 </tr>
             </thead>
             <tbody>
-                <%-- 
-                  Loop ini mengisi tabel dengan data 'mkDiambil'
-                  yang dikirim oleh FrsServlet
-                --%>
                 <c:forEach var="detail" items="${mkDiambil}">
                     <tr>
                         <td><c:out value="${detail.kodeMk}" /></td>
                         <td><c:out value="${detail.namaMk}" /></td>
                         <td><c:out value="${detail.sks}" /></td>
                         <td class="action-links">
-                            <%-- 
-                              Tombol Hapus ini memanggil FrsServlet (doGet)
-                              - action=hapus
-                              - frs_id= (ID dari tabel 'frs', BUKAN ID matkul)
-                              - mahasiswa_id= (Agar tahu harus kembali ke FRS siapa)
-                            --%>
                             <a href="FrsServlet?action=hapus&frs_id=${detail.frsId}&mahasiswa_id=${mahasiswa.id}"
                                class="btn btn-danger"
                                onclick="return confirm('Yakin ingin menghapus mata kuliah ini dari FRS?')">Hapus</a>
@@ -82,8 +58,7 @@
                     </tr>
                 </c:forEach>
             </tbody>
-        </table>
-        
+        </table>    
         <br>
         <a href="MahasiswaServlet?action=daftar" class="btn btn-secondary">Kembali ke Daftar Mahasiswa</a>
 

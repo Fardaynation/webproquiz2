@@ -6,30 +6,30 @@ public class Frs {
     private int mahasiswaId;
     private int matakuliahId;
     
-    public Frs() {
+    public Frs(){
     }
 
-    public int getId() {
+    public int getId(){
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(int id){
         this.id = id;
     }
 
-    public int getMahasiswaId() {
+    public int getMahasiswaId(){
         return mahasiswaId;
     }
 
-    public void setMahasiswaId(int mahasiswaId) {
+    public void setMahasiswaId(int mahasiswaId){
         this.mahasiswaId = mahasiswaId;
     }
 
-    public int getMatakuliahId() {
+    public int getMatakuliahId(){
         return matakuliahId;
     }
 
-    public void setMatakuliahId(int matakuliahId) {
+    public void setMatakuliahId(int matakuliahId){
         this.matakuliahId = matakuliahId;
     }
 }

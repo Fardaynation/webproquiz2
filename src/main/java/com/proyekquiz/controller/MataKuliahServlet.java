@@ -1,5 +1,4 @@
 package com.proyekquiz.controller;
-
 import java.io.IOException;
 import java.util.List;
 
@@ -16,23 +15,22 @@ import com.proyekquiz.model.MataKuliah;
 @WebServlet("/MataKuliahServlet")
 public class MataKuliahServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
-    
     private MataKuliahDao mkDao;
 
-    public void init() {
-        mkDao = new MataKuliahDao(); // Inisialisasi DAO yang baru
+    public void init(){
+        mkDao = new MataKuliahDao();
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
         String action = request.getParameter("action");
-        if (action == null) {
+        if (action == null){
             action = "daftar";
         }
 
         try {
-            switch (action) {
+            switch (action){
                 case "tambah":
                     tampilkanFormTambah(request, response);
                     break;
@@ -47,7 +45,8 @@ public class MataKuliahServlet extends HttpServlet {
                     daftarMataKuliah(request, response);
                     break;
             }
-        } catch (Exception e) {
+        }
+        catch (Exception e){
             throw new ServletException(e);
         }
     }
@@ -58,12 +57,14 @@ public class MataKuliahServlet extends HttpServlet {
         String action = request.getParameter("action");
 
         try {
-            if (action.equals("simpan")) {
+            if (action.equals("simpan")){
                 simpanMataKuliah(request, response);
-            } else if (action.equals("update")) {
+            }
+            else if (action.equals("update")){
                 updateMataKuliah(request, response);
             }
-        } catch (Exception e) {
+        }
+        catch (Exception e){
             throw new ServletException(e);
         }
     }
@@ -72,7 +73,7 @@ public class MataKuliahServlet extends HttpServlet {
     private void daftarMataKuliah(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         List<MataKuliah> daftarMk = mkDao.ambilSemuaMataKuliah();
-        request.setAttribute("daftarMk", daftarMk); // Ganti nama atribut
+        request.setAttribute("daftarMk", daftarMk);
         
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("daftarMataKuliah.jsp"); 
@@ -90,7 +91,7 @@ public class MataKuliahServlet extends HttpServlet {
             throws ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
         MataKuliah mk = mkDao.ambilMataKuliahById(id);
-        request.setAttribute("mk", mk); // Ganti nama atribut
+        request.setAttribute("mk", mk);
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("formMataKuliah.jsp"); 
         dispatcher.forward(request, response);
@@ -102,7 +103,7 @@ public class MataKuliahServlet extends HttpServlet {
 
         mk.setKodeMk(request.getParameter("kodeMk"));
         mk.setNamaMk(request.getParameter("namaMk"));
-        mk.setSks(Integer.parseInt(request.getParameter("sks"))); // Konversi SKS ke int
+        mk.setSks(Integer.parseInt(request.getParameter("sks")));
         
         mkDao.tambahMataKuliah(mk);
         
@@ -115,7 +116,7 @@ public class MataKuliahServlet extends HttpServlet {
         mk.setId(Integer.parseInt(request.getParameter("id")));
         mk.setKodeMk(request.getParameter("kodeMk"));
         mk.setNamaMk(request.getParameter("namaMk"));
-        mk.setSks(Integer.parseInt(request.getParameter("sks"))); // Konversi SKS ke int
+        mk.setSks(Integer.parseInt(request.getParameter("sks")));
         
         mkDao.updateMataKuliah(mk);
         

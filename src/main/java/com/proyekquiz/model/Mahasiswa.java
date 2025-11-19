@@ -6,33 +6,31 @@ public class Mahasiswa {
     private String nama;
     private String email;
 
-    // Constructor kosong
-
-    public Mahasiswa() {
+    public Mahasiswa(){
     }
     
-    public int getId() {
+    public int getId(){
         return id;
     }
-    public void setId(int id) {
+    public void setId(int id){
         this.id = id;
     }
-    public String getNim() {
+    public String getNim(){
         return nim;
     }
-    public void setNim(String nim) {
+    public void setNim(String nim){
         this.nim = nim;
     }
-    public String getNama() {
+    public String getNama(){
         return nama;
     }
-    public void setNama(String nama) {
+    public void setNama(String nama){
         this.nama = nama;
     }
-    public String getEmail() {
+    public String getEmail(){
         return email;
     }
-    public void setEmail(String email) {
+    public void setEmail(String email){
         this.email = email;
     }
 }
