@@ -32,7 +32,9 @@
 
       * After you're done, just save by clicking on the button as shown
       
+      
       <img width="2558" height="1412" alt="image" src="https://github.com/user-attachments/assets/0947ed9c-ab51-4b5b-8d34-ae62068d8fb1" />
+
 
       * Or, by any chance, say you change your mind, just click on the other button to cancel
 
