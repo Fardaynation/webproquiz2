@@ -33,6 +33,7 @@ After you're done, your display will more or less look like the image below
 <img width="2555" height="1396" alt="image" src="https://github.com/user-attachments/assets/11d2f78d-37dc-489e-991d-2193b10b353f" />
 ### Next, let us discuss about the three buttons in the "Aksi" section
 <img width="2560" height="1412" alt="image" src="https://github.com/user-attachments/assets/7f381224-7e49-479c-9e3d-cf24e110a485" />
+
 * the "Edit" button functions as a button to edit the data of the mahasiswa
   
 * clicking the "Hapus" button will give you a confirmation pop-up as the action causes it to delete a mahasiswa
