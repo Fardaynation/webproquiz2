@@ -22,11 +22,11 @@
 
      <img width="2560" height="1410" alt="image" src="https://github.com/user-attachments/assets/7d97e2ad-03a0-40c3-998d-5757befdd065" />
 
-     * After which, you will be transported to this layout
+* After you're done, just save by clicking on the button as shown  
+  <img width="2558" height="1412" alt="image" src="https://github.com/user-attachments/assets/0947ed9c-ab51-4b5b-8d34-ae62068d8fb1" />
 
-       <img width="2557" height="1432" alt="image" src="https://github.com/user-attachments/assets/ed93fd03-59e0-4105-8df5-7b6073eea3d9" />
+* Or, by any chance, say you change your mind, just click on the other button to cancel
 
-       * Fill in the necessary data that you need, image below as example
 
 <img width="2559" height="1406" alt="image" src="https://github.com/user-attachments/assets/cb3741a5-8835-4d0e-a416-dc8aadee4dc0" />
 
