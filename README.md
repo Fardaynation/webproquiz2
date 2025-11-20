@@ -34,6 +34,9 @@ After you're done, your display will more or less look like the image below
 ### Next, let us discuss about the three buttons in the "Aksi" section
 <img width="2560" height="1412" alt="image" src="https://github.com/user-attachments/assets/7f381224-7e49-479c-9e3d-cf24e110a485" />
 * the "Edit" button functions as a button to edit the data of the mahasiswa
+  
 * clicking the "Hapus" button will give you a confirmation pop-up as the action causes it to delete a mahasiswa
+  
 * the "FRS" button will lead you to a different page, it is a page to assign students with courses; more specifically as shown below
+  
 <img width="2045" height="1210" alt="image" src="https://github.com/user-attachments/assets/a67dd397-3e7b-449c-b0f8-32d92fc5e4dd" />
