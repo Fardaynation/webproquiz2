@@ -27,6 +27,4 @@
 
 * Or, by any chance, say you change your mind, just click on the other button to cancel
 
-
-<img width="2559" height="1406" alt="image" src="https://github.com/user-attachments/assets/cb3741a5-8835-4d0e-a416-dc8aadee4dc0" />
-
+<img width="2558" height="1412" alt="image" src="https://github.com/user-attachments/assets/cdb65aed-c4ea-4076-a21b-234981b46282" />
