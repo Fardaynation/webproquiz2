@@ -1,5 +1,19 @@
+# Dummy Data to test :
+   
+   For https://webproquiz2-production.up.railway.app/MahasiswaServlet :
+   
+   Input Data 1 : 50505050, Chocola, Chocola@email.com
+   
+   Input Data 2 : 51515151, Vanilla, Vanilla@email.com
+
+   For https://webproquiz2-production.up.railway.app/MataKuliahServlet :
+   
+   Input Data 1 : PK1111, Data Mining, 4
+   
+   Input Data 2 : PK2222, Reality X, 3
+   
 # Tutorial how to use:
----
+
 1. Go to this URL: https://webproquiz2-production.up.railway.app/
    If you see this page, don't fret
    <img width="2559" height="387" alt="image" src="https://github.com/user-attachments/assets/f4993fa8-fa4f-43e9-8b86-2c74de73c415" />
@@ -37,12 +51,3 @@
   
    * the "FRS" button will lead you to a different page, it is a page to assign students with courses; more specifically as shown below
    <img width="2045" height="1210" alt="image" src="https://github.com/user-attachments/assets/a67dd397-3e7b-449c-b0f8-32d92fc5e4dd" />
-
-   Dummy Data to test :
-   For https://webproquiz2-production.up.railway.app/MahasiswaServlet :
-   Input Data 1 : 50505050, Chocola, Chocola@email.com
-   Input Data 2 : 51515151, Vanilla, Vanilla@email.com
-
-   For https://webproquiz2-production.up.railway.app/MataKuliahServlet :
-   Input Data 1 : PK1111, Data Mining, 4
-   Input Data 2 : PK2222, Reality X, 3
