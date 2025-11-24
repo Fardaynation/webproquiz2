@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.util.List;
 
 import com.proyekquiz.dao.FrsDao;
-import com.proyekquiz.dao.MahasiswaDao; // Kita perlu ini
+import com.proyekquiz.dao.MahasiswaDao;
 import com.proyekquiz.model.FrsDetail;
 import com.proyekquiz.model.Mahasiswa;
 import com.proyekquiz.model.MataKuliah;
@@ -104,3 +104,4 @@ public class FrsServlet extends HttpServlet {
         response.sendRedirect("FrsServlet?action=tampil&mahasiswa_id=" + mahasiswaId);
     }
 }
+
