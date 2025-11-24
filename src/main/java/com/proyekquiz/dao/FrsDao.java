@@ -7,9 +7,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-// Import model yang benar
 import com.proyekquiz.model.MataKuliah;
-import com.proyekquiz.model.FrsDetail; // <-- IMPORT BARU
+import com.proyekquiz.model.FrsDetail;
 import com.proyekquiz.util.DButil;
 
 public class FrsDao {
@@ -97,4 +96,5 @@ public class FrsDao {
         }
         return daftarMk;
     }
+
 }
